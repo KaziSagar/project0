@@ -1,31 +1,17 @@
-/*unable to compile .scss file.
-even after installation git bash prints out:
-bash: sass: command not found */
+$color: #526f9e;
 
-/* $color: #526f9e; */
-
-/*div {
+.nest {
     font-size: 18px;
 
     p {
-        color: blue;
+        color: #526f9e;
     }
 
     ol {
-        color: green;
+        color: #769bd6;
     }
-}*/
-.nest{
-  font-size: 18px;
-}
-.nest p{
-  color: #526f9e;
-}
-.nest ol{
-  color: #769bd6;
 }
 
-/*
 %message {
     font-family: times;
     color: #6587d6;
@@ -47,42 +33,25 @@ bash: sass: command not found */
     @extend %message;
     font-size: 13px;
 }
-*/
-.name, .degree, .uni {
-  font-family: times;
-  color: #6587d6;
-  font-weight: bold;
-  padding: 2px;
-}
-
-.name {
-  font-size: 18px;
-}
-
-.degree {
-  font-size: 15px;
-}
-
-.uni {
-  font-size: 13px;
-}
-
 
 @media (min-width: 500px) {
     h1::before {
         content: "Contact Information";
-        /*color: $color; */
-        color: #526f9e;
+        color: $color;
+        /*color: #526f9e;*/
     }
 }
 
 @media (max-width: 499px) {
     h1::before {
         content: "Contact Info";
-        /*color: $color; */
-        color: #526f9e;
+        color: $color;
+        /*color: #526f9e;*/
     }
 }
+
+
+
 
 body{
   margin: 0px;
